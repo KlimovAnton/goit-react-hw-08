@@ -1,7 +1,14 @@
 export default function TasksPage () {
     return (
-        <h1>
-            This is Tasks
-        </h1>
+        <div>
+            <h3>
+                Your tasks
+            </h3>
+            <div>
+                <label>Find contacts by name</label>
+                <input type="text" />
+            </div>
+            
+        </div>
     )
 }
