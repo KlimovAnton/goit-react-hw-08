@@ -1,0 +1,9 @@
+.link {
+    margin: 0 5px;
+    color: black;
+    font-size: 22px;
+}
+
+.link:hover, .link:focus {
+    color: lightsalmon;
+}
