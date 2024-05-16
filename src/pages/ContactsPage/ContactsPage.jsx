@@ -1,22 +1,16 @@
-import ContactItem from "../../components/ContactItem/ContactItem";
-import { useSelector } from "react-redux";
-import { selectVisibleContacts } from "../../redux/contacts/selectors";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import SearchBox from "../../components/SearchBox/SearchBox";
+import ContactsList from "../../components/ContactsList/ContactsList";
+import UserName from "../../components/UserName/UserName";
 import css from "./ContactsPage.module.css"
 
 export default function ContactsPage () {
-    const contacts = useSelector(selectVisibleContacts)
-    console.log(contacts)
-
     return (
-        <div>
-            <ul className={css.list}>
-                {contacts.map((contact) => (
-                <li className={css.item} key={contact.id}>
-                    <ContactItem contact={contact} />
-                </li>
-                ))
-                }
-            </ul>
+        <div className={css.container}>
+            <UserName /><h3>This is your contacts:</h3>
+            <ContactForm />
+            <SearchBox />
+            <ContactsList />
         </div>
     )
 }
