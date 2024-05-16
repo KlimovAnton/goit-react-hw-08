@@ -7,8 +7,8 @@ export default function Navigation () {
             <NavLink to="/" className={css.link}>
                 Home
             </NavLink>
-            <NavLink to="/tasks" className={css.link}>
-                Tasks
+            <NavLink to="/contacts" className={css.link}>
+                Contacts
             </NavLink>
         </nav>
     )
