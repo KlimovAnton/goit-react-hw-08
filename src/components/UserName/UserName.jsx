@@ -5,6 +5,6 @@ import css from "./UserName.module.css"
 export default function UserName () {
     const user = useSelector(selectUser);
     return (
-        <p className={css.username}>Welcome, {user.name}</p>
+        <p className={css.username}>Welcome, <span className={css.name}>{user.name}</span></p>
     )
 }

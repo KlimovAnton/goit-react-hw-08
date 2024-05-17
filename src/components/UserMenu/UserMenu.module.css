@@ -1,6 +1,19 @@
 .wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
+    height: 24px;
   }
-  
+
+.button {
+  font-size: 12px;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: lightsalmon;
+}
