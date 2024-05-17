@@ -6,7 +6,6 @@ import { useSelector } from "react-redux"
 export default function ContactsList () {
     
     const contacts = useSelector(selectVisibleContacts)
-    console.log(contacts)
 
     return (
         <ul className={css.list}>
